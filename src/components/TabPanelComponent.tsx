@@ -31,7 +31,7 @@ export default class TabPanelComponent extends Component<MyProps, MyState> {
           <p>Today</p>
           <div className="today-data">
             <img
-              src={`http://openweathermap.org/img/wn/${today.icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${today.icon}@2x.png`}
               alt={today.main}
             />
             <div className="d">
@@ -47,7 +47,7 @@ export default class TabPanelComponent extends Component<MyProps, MyState> {
               <div className="day" key={i}>
                 <p> {day.dayName} </p>
                 <img
-                  src={`http://openweathermap.org/img/wn/${day.icon}@2x.png`} 
+                  src={`https://openweathermap.org/img/wn/${day.icon}@2x.png`} 
                   alt={day.dayName}
                 />
                 <h6> {day.temp}° </h6>

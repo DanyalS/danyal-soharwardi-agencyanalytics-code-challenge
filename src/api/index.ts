@@ -18,7 +18,7 @@ const weekday = [
 export const fetchToday = async (latitude: number, longitude: number) => { 
   try {
     const apiCall = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
     );
 
     const response = await apiCall.json();
@@ -43,7 +43,7 @@ export const fetchToday = async (latitude: number, longitude: number) => {
 export const fetchData = async (latitude: number, longitude: number) => {
   try {
     const apiCall = await fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
     );
 
     const response = await apiCall.json();
